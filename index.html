@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LightFlow Inventory</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>LightFlow Inventory & Pricing</h1>
+      <p class="subtitle">Simple inventory tracker for your lighting business</p>
+
+      <section class="controls" aria-label="Search and filters">
+        <label>
+          Search products
+          <input id="searchInput" type="search" placeholder="Search code, name, supplier..." />
+        </label>
+
+        <label>
+          Filter by category
+          <select id="categoryFilter">
+            <option value="all">All categories</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="table-wrap" aria-label="Inventory table">
+        <table>
+          <thead>
+            <tr>
+              <th>Product Code</th>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Supplier</th>
+              <th>Cost ($)</th>
+              <th>Selling Price ($)</th>
+              <th>Stock Quantity</th>
+              <th>Gross Profit / Item ($)</th>
+            </tr>
+          </thead>
+          <tbody id="inventoryBody"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
